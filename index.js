@@ -64,7 +64,11 @@ const questions = [
         }
 ];
 
+// process.cwd gets the current working directory of the node process
+// path.join will join the current working director to the fileName creating the file path
+// writeFileSync writes the data to the file path synchronously
 function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
 }
 
 // Function init initiates the prompts for questions array

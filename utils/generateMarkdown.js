@@ -1,6 +1,8 @@
+// README template written in Markdown as a template literal
 function generateMarkdown(data) {
   return `
 # ${data.title}
+![npm](https://img.shields.io/npm/v/inquirer?style=plastic)
 
 ## Description
 ${data.description}

@@ -1,6 +1,11 @@
+// fs is a Node standard library package for reading and writing files
 const fs = require("fs");
+// inquirer is a collection of common interactive command line user interfaces
 const inquirer = require("inquirer");
+// Tells Node where to find the generateMarkdown
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
+// Array of questions for the user to interface with
 const questions = [
         {
             type: "input",
@@ -62,8 +67,12 @@ const questions = [
 function writeToFile(fileName, data) {
 }
 
+// Function init initiates the prompts for questions array
+// When user gives response, writeToFile method is passed (filename, data)
 function init() {
-
+    inquirer.prompt(questions).then(response => {
+        writeToFile("README.md", generateMarkdown({ ...response}))
+    })
 }
 
 init();

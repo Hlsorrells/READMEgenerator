@@ -23,7 +23,7 @@ const questions = [
             type: "input",
             message: "What is the URL to your project?",
             name: "URL"
-        }
+        },
         {
             type: "input",
             message: "What is your project title?",
@@ -36,13 +36,18 @@ const questions = [
         },
         {
             type: "input",
+            message: "How does the user utilize the repo?",
+            name: "usage"
+        },
+        {
+            type: "input",
             message: "What command should be run to install dependencies?",
             name: "installCode"
         },
         {
             type: "input",
-            message: "How does the user utilize the repo?",
-            name: "usage"
+            message: "What command is needed to run tests?",
+            name: "tests"
         },
         {
             type: "list",
@@ -59,11 +64,7 @@ const questions = [
             message: "How can the user make contributions to the repo?",
             name: "contribution"
         },
-        {
-            type: "input",
-            message: "What command is needed to run tests?",
-            name: "tests"
-        }
+
 ];
 
 // process.cwd gets the current working directory of the node process

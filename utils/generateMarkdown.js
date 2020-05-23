@@ -38,7 +38,7 @@ ${data.tests}
 
 
 ## Questions
-If you have any questions about the repo, open an issue or contact  ${data.username} directly at ${data.email}
+If you have any questions about the repo, open an issue or contact [${data.username}](github.com/${data.username}) directly at [${data.email}](mailto:${data.email}).
 `;
 }
 // Object used to store method to be used in index.js file

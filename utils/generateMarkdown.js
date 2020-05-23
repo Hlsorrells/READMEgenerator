@@ -15,6 +15,10 @@ ${data.description}
 
 ## Installation
 To install, please run the following command in terminal:
+  
+\`\`\`
+${data.installCode}
+\`\`\`
 
 ## Usage
 ${data.usage}
@@ -26,11 +30,16 @@ This project is licensed under the ${data.license} license.
 ${data.contribution}
 
 ## Tests
+To test installation, run the following command in terminal:
+
+\`\`\`
 ${data.tests}
+\`\`\`
+
 
 ## Questions
 If you have any questions about the repo, open an issue or contact  ${data.username} directly at ${data.email}
 `;
 }
-
+// Object used to store method to be used in index.js file
 module.exports = generateMarkdown;

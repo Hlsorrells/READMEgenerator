@@ -1,5 +1,7 @@
 // fs is a Node standard library package for reading and writing files
 const fs = require("fs");
+// path module is needed to work with the directories and file paths
+const path = require("path");
 // inquirer is a collection of common interactive command line user interfaces
 const inquirer = require("inquirer");
 // Tells Node where to find the generateMarkdown
